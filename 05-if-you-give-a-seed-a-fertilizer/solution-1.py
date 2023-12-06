@@ -90,4 +90,4 @@ def sol_2():
 
 create_dict()
 print('Solution 1:', sol_1(seeds))
-print('Solution 2:', sol_2())
+#print('Solution 2:', sol_2())
