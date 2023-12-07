@@ -6,7 +6,7 @@ This repo contains solutions to the [Advent of Code 2023](https://adventofcode.c
 
 | Week 1 | Week 2 | Week 3 | Week 4 |
 | - | - | - | - |
-| [Day 1 \*\*](01-trebuchet) | Day 7 | Day 13 | Day 19 |
+| [Day 1 \*\*](01-trebuchet) | [Day 7 \*\*](07-camel-cards) | Day 13 | Day 19 |
 | [Day 2 \*\*](02-cube-conundrum) | Day 8 | Day 14 | Day 20 |
 | [Day 3 \*\*](03-gear-ratios) | Day 9 | Day 15 | Day 21 |
 | [Day 4 \*\*](04-scratchcards) | Day 10 | Day 16 | Day 22 |
