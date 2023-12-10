@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import copy
 
 
 if len(sys.argv) < 2:
@@ -32,7 +33,7 @@ with open(sys.argv[1]) as f:
 		M.append(list(_l.strip()))
 		if 'S' in _l:
 			S = (i, _l.index('S'))
-T = M
+T = copy.deepcopy(M)
 
 
 def get_traverseable(y, x, yn, xn, _next):
@@ -60,19 +61,23 @@ def get_next(y, x):
 	return C
 
 
+LT = []
+
 def traverse():
-	global T
+	global T, LT, S
 	ans = []
 	i = 1
 	y, x = S
+	LT.append((y,x))
 	_next = get_next(y, x)
 	while len(_next) > 0:
 		t = []
 		for (yy, xx) in _next:
+			LT.append((yy, xx))
 			if T[yy][xx] == 'S':
 				continue
 			t.extend(get_next(yy, xx))
-			T[yy][xx] = f'{i}'
+			T[yy][xx] = f'o'
 		ans.append(i)
 		_next = t
 		if not len(t):
@@ -81,6 +86,31 @@ def traverse():
 	return max(ans)
 
 
-print(traverse())
-#for l in T:
-#	print('-'.join(map(str, l)))
+def mark_enclosed():
+	global M, LT
+	gc = 0
+	for i, l in enumerate(M):
+		for j, e in enumerate(M[i]):
+			if (i, j) in LT:
+				continue
+			yi = i + 1
+			xi = j + 1
+			count = 0
+			while yi < len(M):
+				while xi < len(M[i]):
+					# L and 7 do not enclose element, scan for horizontal enclosure
+					if (yi, xi) in LT and M[yi][xi] not in ['.', 'L', '7']:
+						count += 1
+					xi += 1
+					break
+				yi += 1
+			if count % 2 != 0:
+				gc += 1
+				M[i][j] = 'x'
+	return gc
+
+print('Solution 1:', traverse())
+print('Solution 2:', mark_enclosed())
+
+#for l in M:
+#	print(' '.join(l))
