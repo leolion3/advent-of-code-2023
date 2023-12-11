@@ -10,7 +10,7 @@ This repo contains solutions to the [Advent of Code 2023](https://adventofcode.c
 | [Day 2 \*\*](02-cube-conundrum) | [Day 8 \*\*](08-haunted-wasteland) | Day 14 | Day 20 |
 | [Day 3 \*\*](03-gear-ratios) | [Day 9 \*\*](09-mirage-maintenance) | Day 15 | Day 21 |
 | [Day 4 \*\*](04-scratchcards) | [Day 10 \*\*](10-pipe-maze) | Day 16 | Day 22 |
-| [Day 5 \*](05-if-you-give-a-seed-a-fertilizer) | Day 11 | Day 17 | Day 23 |
+| [Day 5 \*](05-if-you-give-a-seed-a-fertilizer) | [Day 11 \*\*](11-cosmic-expansion) | Day 17 | Day 23 |
 | [Day 6 \*\*](06-wait-for-it) | Day 12 | Day 18 | Day 24 |
 
 **Christmas day** - Day 25
