@@ -4,6 +4,8 @@
 
 This repo contains solutions to the [Advent of Code 2023](https://adventofcode.com/) event in the Python programming language.
 
+(\*) Didnt have time to finish the remaining challenges, the solutions will be uploaded sometime in the future. 
+
 | Week 1 | Week 2 | Week 3 | Week 4 |
 | - | - | - | - |
 | [Day 1 \*\*](01-trebuchet) | [Day 7 \*\*](07-camel-cards) | [Day 13 \*\*](13-point-of-incidence) | Day 19 |
